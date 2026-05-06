@@ -1,0 +1,134 @@
+<!doctype html>
+    <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GrantOps Sentinel</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">GS</div>
+          <div>
+            <h1>GrantOps Sentinel</h1>
+            <p>Public proof and risk signal pages for Base / Arbitrum builders</p>
+          </div>
+        </div>
+        <div class="top-actions">
+          <button class="icon-button" id="exportButton" title="Export report" aria-label="Export report">
+            <span aria-hidden="true">↓</span>
+          </button>
+          <button class="primary-button" id="focusFormButton">Add Project</button>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <aside class="sidebar" aria-label="Project registry">
+          <form id="projectForm" class="project-form">
+            <div class="section-title">
+              <span>Project Registry</span>
+              <strong id="projectCount">0</strong>
+            </div>
+
+            <label>
+              Project Name
+              <input id="nameInput" name="name" required maxlength="48" placeholder="Example: Orbit Vault" />
+            </label>
+
+            <label>
+              Chain
+              <select id="chainInput" name="chain">
+                <option value="base">Base</option>
+                <option value="arbitrum">Arbitrum</option>
+                <option value="base-sepolia">Base Sepolia</option>
+                <option value="arbitrum-sepolia">Arbitrum Sepolia</option>
+              </select>
+            </label>
+
+            <label>
+              Contract Address
+              <input id="addressInput" name="address" required placeholder="0x..." />
+            </label>
+
+            <label>
+              GitHub
+              <input id="githubInput" name="github" placeholder="https://github.com/..." />
+            </label>
+
+            <label>
+              Milestone
+              <input id="milestoneInput" name="milestone" placeholder="Testnet deploy / Mainnet launch / Audit complete" />
+            </label>
+
+            <label>
+              Privileged Function Keywords
+              <input id="functionInput" name="functions" placeholder="upgrade, pause, mint" />
+            </label>
+
+            <div class="toggle-row">
+              <label class="checkbox-label">
+                <input id="verifiedInput" type="checkbox" checked />
+                <span>Source verified</span>
+              </label>
+              <label class="checkbox-label">
+                <input id="proxyInput" type="checkbox" />
+                <span>Proxy contract</span>
+              </label>
+            </div>
+
+            <button class="primary-button full" type="submit">Generate Proof Page</button>
+          </form>
+        </aside>
+
+        <section class="content">
+          <div class="metric-grid" aria-label="Overview metrics">
+            <div class="metric-tile">
+              <span>Projects</span>
+              <strong id="totalProjects">0</strong>
+            </div>
+            <div class="metric-tile">
+              <span>Verified</span>
+              <strong id="verifiedProjects">0</strong>
+            </div>
+            <div class="metric-tile">
+              <span>High Risk</span>
+              <strong id="highRiskProjects">0</strong>
+            </div>
+            <div class="metric-tile">
+              <span>Weekly Calls</span>
+              <strong id="weeklyCalls">0</strong>
+            </div>
+          </div>
+
+          <div class="toolbar">
+            <div class="segmented" role="tablist" aria-label="Chain filter">
+              <button class="segment active" data-filter="all" type="button">All</button>
+              <button class="segment" data-filter="base" type="button">Base</button>
+              <button class="segment" data-filter="arbitrum" type="button">Arbitrum</button>
+            </div>
+            <label class="search-label">
+              <span>Search</span>
+              <input id="searchInput" placeholder="Name / address / milestone" />
+            </label>
+          </div>
+
+          <section class="split-view">
+            <div class="project-list" id="projectList" aria-label="Project list"></div>
+
+            <article class="project-detail" id="projectDetail" aria-live="polite">
+              <div class="empty-state">
+                <div class="empty-mark">GS</div>
+                <h2>Select a project</h2>
+                <p>The proof page shows deployment evidence, risk signals, milestones, and a grant-ready summary.</p>
+              </div>
+            </article>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
