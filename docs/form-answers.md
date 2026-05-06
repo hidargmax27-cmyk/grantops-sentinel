@@ -40,7 +40,7 @@ A public dashboard and project proof page that standardizes onchain evidence, mi
 
 ## Current Stage
 
-Static MVP prepared and ready for public deployment.
+Static MVP deployed and publicly accessible at https://grantops-sentinel.vercel.app/.
 
 ## Requested Support
 
@@ -65,5 +65,5 @@ Static MVP prepared and ready for public deployment.
 - Farcaster: nahtyra
 - Telegram/Discord: nah058130
 - GitHub: https://github.com/hidargmax27-cmyk
+- Demo: https://grantops-sentinel.vercel.app/
 - Wallet: 0x066889167Ba3629ef8bBc6069Ed705b9105b9d2C
-

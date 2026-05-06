@@ -41,5 +41,4 @@ The workflow:
 Next: automated explorer data, 20 indexed ecosystem examples, and reviewer summary exports.
 
 GitHub: https://github.com/hidargmax27-cmyk/grantops-sentinel
-Demo: replace with deployed URL
-
+Demo: https://grantops-sentinel.vercel.app/

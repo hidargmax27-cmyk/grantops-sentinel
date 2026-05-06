@@ -5,7 +5,7 @@ Do not submit grant applications until these are complete.
 ## Required Public Links
 
 - GitHub repository: https://github.com/hidargmax27-cmyk/grantops-sentinel
-- Demo URL: replace with deployed URL
+- Demo URL: https://grantops-sentinel.vercel.app/
 - X/Twitter profile: https://x.com/cognibridgeai
 - Farcaster: nahtyra
 
@@ -42,4 +42,3 @@ Do not submit grant applications until these are complete.
 - Do not claim contracts are safe.
 - Do not claim guaranteed grant approval.
 - Do not claim full automation until explorer API ingestion is implemented.
-

@@ -96,7 +96,7 @@ The project strengthens the operational services layer for early onchain busines
 
 ## Links
 
-- Demo: replace with deployed URL
+- Demo: https://grantops-sentinel.vercel.app/
 - GitHub: https://github.com/hidargmax27-cmyk/grantops-sentinel
 - X/Twitter: https://x.com/cognibridgeai
 - Farcaster: nahtyra
@@ -104,4 +104,3 @@ The project strengthens the operational services layer for early onchain busines
 ## Disclaimer
 
 GrantOps Sentinel provides public risk signals and project evidence. It is not a smart contract audit, a security certification, financial advice, or an endorsement of any project.
-

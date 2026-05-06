@@ -106,7 +106,7 @@ We will track:
 
 ## Links
 
-- Demo: replace with deployed URL
+- Demo: https://grantops-sentinel.vercel.app/
 - GitHub: https://github.com/hidargmax27-cmyk/grantops-sentinel
 - X/Twitter: https://x.com/cognibridgeai
 - Farcaster: nahtyra
@@ -114,4 +114,3 @@ We will track:
 ## Disclaimer
 
 GrantOps Sentinel provides public risk signals and project evidence. It is not a smart contract audit, a security certification, financial advice, or an endorsement of any project.
-

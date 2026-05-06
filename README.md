@@ -9,10 +9,10 @@ It helps early dApp teams show what they have shipped, where contracts are deplo
 Deployment target:
 
 ```text
-https://grantops.cognibridge.ai
+https://grantops-sentinel.vercel.app/
 ```
 
-Replace this with the real URL after deploying.
+The MVP is deployed and publicly accessible.
 
 ## What The MVP Does
 
@@ -75,4 +75,3 @@ GrantOps Sentinel provides public risk signals and project evidence. It is not a
 ## License
 
 MIT
-
