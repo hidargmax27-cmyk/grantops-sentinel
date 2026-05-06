@@ -1,51 +1,45 @@
-# GrantOps Sentinel Build Log Posts
+# Build Log Posts
 
-Use these posts for X/Twitter and Farcaster. Replace the demo URL after deployment.
+Post these on X and Farcaster before submitting grants.
 
-## Post 1: Launching the MVP
+## Post 1
 
-I just published the MVP for GrantOps Sentinel.
+We are building GrantOps Sentinel under Cognitive Bridge: an open-source proof and risk signal dashboard for Base and Arbitrum builders.
 
-It is an open-source public proof and risk-signal dashboard for Base and Arbitrum builders. The goal is to help early dApp teams show what they have shipped in a format that grant reviewers can inspect quickly.
+Goal: give early dApps a public page showing deployed contracts, source verification, basic privileged-permission risk signals, milestone evidence, and early onchain activity.
 
-The MVP supports project registration, contract addresses, explorer links, source verification status, milestone evidence, basic privileged-control signals, and JSON report export.
+Builders need better proof pages. Grant reviewers need less manual checking. Users need clearer risk signals before interacting.
 
-GitHub: https://github.com/hidargmax27-cmyk/grantops-sentinel
+MVP target: Base + Arbitrum first, Solana support next.
 
-Demo: replace with deployed URL
+## Post 2
 
-## Post 2: Why This Matters
+GrantOps Sentinel MVP scope:
 
-Grant applications often require proof that a team has shipped, but the evidence is usually scattered across explorers, GitHub, social posts, and docs.
+- project registry
+- Base / Arbitrum contract pages
+- explorer links
+- source verification status
+- proxy/admin/upgrade/pause/mint risk signals
+- milestone evidence
+- recent activity metrics
 
-GrantOps Sentinel is my attempt to make that evidence easier to organize and review.
+Important boundary: this is not an audit certificate. It is a public risk signal layer that helps builders and reviewers know what to inspect next.
 
-A builder can create a proof page with contract links, source verification status, milestones, and risk-signal labels. A reviewer can inspect the first layer of evidence without jumping across multiple disconnected sources.
+## Post 3
 
-This is not an audit or a certification. It is a practical evidence layer for grant workflows.
+Shipping the first GrantOps Sentinel demo.
 
-## Post 3: What I Am Building Next
+The workflow:
 
-The GrantOps Sentinel MVP is static and intentionally simple. Next, I want to add automated explorer ingestion and persistent proof pages.
+1. register a project
+2. add Base or Arbitrum contract addresses
+3. show explorer/source links
+4. flag basic privileged controls
+5. generate a grant-ready public proof page
 
-Planned next steps:
-
-1. BaseScan and Arbiscan verification checks.
-2. Automated contract activity indicators.
-3. Shareable public proof page URLs.
-4. Markdown and JSON reviewer exports.
-5. Pilot feedback from Base and Arbitrum builders.
-
-GitHub: https://github.com/hidargmax27-cmyk/grantops-sentinel
-
-Demo: replace with deployed URL
-
-## Short Farcaster Version
-
-I published the MVP for GrantOps Sentinel: an open-source public proof and risk-signal dashboard for Base and Arbitrum builders.
-
-It helps teams create grant-ready evidence pages with contract links, verification status, milestones, risk-signal labels, and exportable reports.
+Next: automated explorer data, 20 indexed ecosystem examples, and reviewer summary exports.
 
 GitHub: https://github.com/hidargmax27-cmyk/grantops-sentinel
-
 Demo: replace with deployed URL
+

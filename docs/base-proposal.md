@@ -1,72 +1,117 @@
-# Base Grant Proposal: GrantOps Sentinel
+# Base Proposal: GrantOps Sentinel by Cognitive Bridge
 
-## Project Summary
+## Project Name
 
-GrantOps Sentinel is an open-source public proof and risk-signal dashboard for Base builders. The MVP helps early dApp teams create a grant-ready evidence page that shows what has been shipped, where contracts are deployed, whether source code is verified, what privileged controls may exist, and which milestones or early onchain activity can be referenced by reviewers.
+GrantOps Sentinel by Cognitive Bridge
 
-The product is designed for builders applying to ecosystem grants and for reviewers who need a faster way to confirm deployment evidence. Instead of asking applicants to scatter proof across block explorers, GitHub repositories, social posts, and private documents, GrantOps Sentinel organizes this information into one lightweight public page.
+## Short Description
 
-## Base Ecosystem Fit
+GrantOps Sentinel is an open-source dashboard that helps Base builders prove shipped work, verified contracts, milestone delivery, and early ecosystem impact through public onchain evidence.
 
-Base has a growing builder ecosystem, and early teams often need to prove shipping velocity before they have mature analytics, audits, or compliance workflows. GrantOps Sentinel supports Base and Base Sepolia from day one, making it useful for teams that are moving from testnet prototypes to mainnet deployments.
+## Applicant
 
-The project can help Base in three direct ways. First, it improves the quality of grant applications by giving builders a standardized proof format. Second, it reduces reviewer friction by surfacing explorer links, verification status, and risk signals. Third, it encourages builders to be more transparent about privileged contract controls such as upgrade, pause, mint, blacklist, sweep, or withdraw permissions.
+- Applicant: Yutong Zhang
+- Team/Brand: Cognitive Bridge
+- Company entity: Shenzhen Witwith Technology Co., Ltd.
+- Location: Hong Kong
+- Email: hidargmax27@gmail.com
+- X/Twitter: https://x.com/cognibridgeai
+- Farcaster: nahtyra
+- Telegram/Discord: nah058130
+- GitHub: https://github.com/hidargmax27-cmyk
+- Wallet: 0x066889167Ba3629ef8bBc6069Ed705b9105b9d2C
+- KYC/W8/W9: available if required
 
 ## Problem
 
-Grant reviewers and ecosystem teams often spend significant time manually checking whether a project has actually shipped. Builders also struggle to present technical evidence in a clean format, especially when they are early-stage and do not yet have a full analytics stack.
+Base grants and retro funding reward shipped code and real ecosystem impact. However, early builders still struggle to present their work in a verifiable, standardized way. Reviewers and community members often need to manually check contracts, repositories, demos, social updates, transaction activity, and milestone claims.
 
-The current workflow is fragmented. A reviewer may need to inspect contract addresses, block explorer pages, source verification, GitHub repositories, milestones, and social updates separately. This slows down evaluation and creates room for incomplete or inconsistent grant submissions.
+This creates friction for good builders and makes it harder for the ecosystem to distinguish active projects from low-signal submissions.
 
 ## Solution
 
-GrantOps Sentinel provides a simple static dashboard where builders can register Base projects, add contract addresses, link GitHub repositories, record milestones, mark verification status, and list privileged function keywords. The dashboard then generates a structured proof page with explorer links, risk signals, activity metrics, and a grant-ready summary.
+GrantOps Sentinel gives each project a public proof page that includes:
 
-The MVP is intentionally lightweight. It requires no backend and can be deployed directly to Vercel, Netlify, Cloudflare Pages, or GitHub Pages. This makes it easy for reviewers to inspect the product and easy for builders to fork or adapt it.
+- Base deployment addresses and explorer links
+- source verification status
+- basic contract risk signals such as proxy, admin, upgrade, pause, mint, blacklist, sweep, and withdraw controls
+- milestone evidence and delivery links
+- early impact metrics such as recent transactions, active callers, and project updates
 
-## Current MVP Scope
+The first version supports Base mainnet and Base Sepolia, with Arbitrum support included to make the tool useful across the broader L2 ecosystem.
 
-| Area | Current Status |
-|---|---|
-| Base support | Included |
-| Base Sepolia support | Included |
-| Project registry | Included |
-| Explorer links | Included |
-| Source verification field | Included |
-| Risk keyword detection | Included |
-| Milestone evidence | Included |
-| JSON export | Included |
-| Backend ingestion | Planned |
-| Automated explorer API checks | Planned |
+## Why Base
 
-## Requested Support
+Base emphasizes shipped projects, clear documentation, demos, and tracked impact in its funding guidance. GrantOps Sentinel directly strengthens those behaviors by giving builders a clean way to document and prove impact from day one.
 
-We are seeking Base ecosystem support to improve GrantOps Sentinel from a static MVP into a practical reviewer-assistance tool for Base builders. Funding would be used to add automated BaseScan ingestion, persistent project profiles, public share URLs, better risk-signal classification, and a small set of reviewer workflows.
+The project also fits the public goods path because it is open-source, publicly accessible, and useful to many teams rather than a single commercial product.
+
+## Current Status
+
+- Static MVP prepared.
+- GitHub repository prepared for open-source release.
+- Base and Arbitrum proof-page workflow implemented in the first demo.
+- Applicant can commit 30-50 hours per week.
 
 ## Milestones
 
-| Milestone | Description | Target Outcome |
-|---|---|---|
-| MVP public demo | Publish the static dashboard and documentation | Reviewers can inspect the concept immediately |
-| BaseScan integration | Add automated address, verification, and transaction checks | Builders no longer need to manually enter all proof fields |
-| Public proof pages | Create shareable project URLs | Applicants can attach one clean link to grant forms |
-| Reviewer export | Improve JSON and Markdown export | Grant reviewers can archive evidence quickly |
-| Pilot feedback | Test with Base builders | Validate the workflow and prioritize production features |
+### Milestone 1: Base MVP
+
+Timeline: 1 week
+
+Deliverables:
+
+- Base project registry page
+- contract address and explorer link support
+- public project proof page
+- open-source repository and setup docs
+
+### Milestone 2: Risk Signals
+
+Timeline: 2 weeks
+
+Deliverables:
+
+- source verification status
+- proxy/admin detection
+- privileged function keyword detection
+- risk signal explanations
+
+### Milestone 3: Impact Metrics
+
+Timeline: 3 weeks
+
+Deliverables:
+
+- recent transaction count
+- recent unique caller count
+- milestone evidence feed
+- dashboard with at least 20 Base ecosystem project examples
+
+## Funding Request
+
+For Base Builder Grants: 1-5 ETH retroactive grant after public MVP launch.
+
+For broader ecosystem support: $15,000-$25,000 equivalent to complete milestones, keep the project open-source, and maintain the public dashboard for three months.
 
 ## Impact Metrics
 
-The initial success metrics are practical and reviewer-focused. We will track the number of projects registered in the tool, the number of generated proof pages, the number of exported reports, the number of Base and Base Sepolia contracts checked, and the amount of qualitative feedback from builders and reviewers.
+We will track:
 
-## Team
-
-Applicant: Yutong Zhang. Brand / Team: Cognitive Bridge. Company entity: Shenzhen Witwith Technology Co., Ltd. Location: Hong Kong. Email: hidargmax27@gmail.com. X/Twitter: https://x.com/cognibridgeai. Farcaster: nahtyra. Telegram/Discord: nah058130. Wallet: 0x066889167Ba3629ef8bBc6069Ed705b9105b9d2C. GitHub: https://github.com/hidargmax27-cmyk.
+- number of Base projects registered
+- number of public proof pages viewed/shared
+- number of contracts checked
+- number of builders using proof pages in grant applications
+- number of issues or risk signals identified before broader user exposure
 
 ## Links
 
-GitHub: https://github.com/hidargmax27-cmyk/grantops-sentinel
-
-Demo: replace with deployed URL
+- Demo: replace with deployed URL
+- GitHub: https://github.com/hidargmax27-cmyk/grantops-sentinel
+- X/Twitter: https://x.com/cognibridgeai
+- Farcaster: nahtyra
 
 ## Disclaimer
 
 GrantOps Sentinel provides public risk signals and project evidence. It is not a smart contract audit, a security certification, financial advice, or an endorsement of any project.
+

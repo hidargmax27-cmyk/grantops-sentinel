@@ -1,75 +1,45 @@
-# GrantOps Sentinel Submission Checklist
+# Submission Checklist
 
-Use this checklist before submitting Base, Arbitrum, or other ecosystem grant applications.
+Do not submit grant applications until these are complete.
 
-## Repository Checklist
+## Required Public Links
 
-| Item | Status |
-|---|---|
-| Repository is public | Pending |
-| README is visible and accurate | Pending |
-| MIT LICENSE is included | Pending |
-| `index.html`, `styles.css`, and `app.js` are in the root directory | Pending |
-| `docs/` folder is included | Pending |
-| Proposal documents are included | Pending |
-| `.nojekyll` is included for GitHub Pages compatibility | Pending |
-| `vercel.json` and `netlify.toml` are included | Pending |
+- GitHub repository: https://github.com/hidargmax27-cmyk/grantops-sentinel
+- Demo URL: replace with deployed URL
+- X/Twitter profile: https://x.com/cognibridgeai
+- Farcaster: nahtyra
 
-## Demo Deployment Checklist
+## Required Repository Files
 
-| Item | Status |
-|---|---|
-| Demo is deployed to Vercel, Netlify, Cloudflare Pages, or GitHub Pages | Pending |
-| Demo URL loads without build errors | Pending |
-| Project registry form works | Pending |
-| Chain filter works | Pending |
-| Search works | Pending |
-| Explorer links open correctly | Pending |
-| JSON export works | Pending |
-| Mobile layout is acceptable | Pending |
+- `index.html`
+- `styles.css`
+- `app.js`
+- `README.md`
+- `LICENSE`
+- `docs/base-proposal.md`
+- `docs/arbitrum-proposal.md`
+- `docs/roadmap.md`
+- `docs/form-answers.md`
 
-## Documentation Checklist
+## Required Demo Evidence
 
-| Document | Status |
-|---|---|
-| `docs/base-proposal.md` | Pending |
-| `docs/arbitrum-proposal.md` | Pending |
-| `docs/roadmap.md` | Pending |
-| `docs/form-answers.md` | Pending |
-| `docs/demo-video-script.md` | Pending |
-| `docs/build-log-posts.md` | Pending |
-| `docs/submission-checklist.md` | Pending |
+- public demo URL
+- GitHub repository is public
+- README has project description and disclaimer
+- first three build log posts are published
+- 60-90 second demo video recorded
 
-## Grant Form Checklist
+## First Submission Order
 
-| Field | Recommended Source |
-|---|---|
-| Project name | README or form answers |
-| Short description | `docs/form-answers.md` |
-| Long description | `docs/form-answers.md` |
-| Base-specific application | `docs/base-proposal.md` |
-| Arbitrum-specific application | `docs/arbitrum-proposal.md` |
-| Roadmap | `docs/roadmap.md` |
-| Demo script | `docs/demo-video-script.md` |
-| Public updates | `docs/build-log-posts.md` |
+1. Arbitrum Open House / Buildathon
+2. Base Builder Rewards / Builder Grants
+3. OP Retro Funding / Atlas after impact metrics exist
+4. Solana Foundation grant after Solana support is planned or partially built
 
-## Links to Prepare
+## Do Not Claim
 
-| Link | Value |
-|---|---|
-| GitHub | https://github.com/hidargmax27-cmyk/grantops-sentinel |
-| Demo | replace with deployed URL |
-| X/Twitter | https://x.com/cognibridgeai |
-| Farcaster | nahtyra |
-| Applicant email | hidargmax27@gmail.com |
-| Wallet | 0x066889167Ba3629ef8bBc6069Ed705b9105b9d2C |
+- Do not claim this is a smart contract audit.
+- Do not claim contracts are safe.
+- Do not claim guaranteed grant approval.
+- Do not claim full automation until explorer API ingestion is implemented.
 
-## Minimum Before Submitting
-
-Before submitting a grant application, make sure the GitHub repository is public, the demo URL is live, the README contains the correct demo link, and the proposal documents no longer contain the placeholder text `replace with deployed URL`.
-
-## Final Review
-
-Read the application once from the perspective of a grant reviewer. The application should answer three questions clearly: what has been built, why it matters to the ecosystem, and what funding will unlock next.
-
-GrantOps Sentinel should be presented as an evidence and workflow tool, not as an audit product or security certification.

@@ -1,72 +1,107 @@
-# Arbitrum Grant Proposal: GrantOps Sentinel
+# Arbitrum Proposal: GrantOps Sentinel by Cognitive Bridge
 
-## Project Summary
+## Project Name
 
-GrantOps Sentinel is an open-source public proof and risk-signal dashboard for Arbitrum builders. The MVP helps early dApp teams present shipped work in a clean, reviewer-friendly format by showing deployed contract addresses, explorer links, source verification status, privileged control signals, milestones, and early activity metrics.
+GrantOps Sentinel by Cognitive Bridge
 
-The project is built for grant applicants and ecosystem reviewers. Applicants need a trustworthy way to show that they have deployed and iterated. Reviewers need a faster way to inspect whether a project is real, active, and transparent about contract-level controls.
+## Category
 
-## Arbitrum Ecosystem Fit
+Open Category. It can also fit an AI Agentic category if we add an assistant that summarizes contract and milestone risk signals for reviewers.
 
-Arbitrum has a strong application and Orbit ecosystem where teams often move quickly from prototype to grant application. GrantOps Sentinel supports Arbitrum One and Arbitrum Sepolia from the MVP stage, making it suitable for builders who need to present either production deployments or testnet milestones.
+## Short Description
 
-The tool can support the Arbitrum ecosystem by improving the evidence layer around grants and builder programs. It does not replace due diligence or audits, but it makes the first-pass review process more consistent. A reviewer can quickly see whether a project has a contract address, source verification, a GitHub link, a milestone, and any obvious privileged function keywords.
+GrantOps Sentinel is a public project health and contract risk signal layer for Arbitrum builders. It helps teams, users, and ecosystem reviewers verify whether an application is live, transparent, active, and milestone-ready.
+
+## Applicant
+
+- Applicant: Yutong Zhang
+- Team/Brand: Cognitive Bridge
+- Company entity: Shenzhen Witwith Technology Co., Ltd.
+- Location: Hong Kong
+- Email: hidargmax27@gmail.com
+- X/Twitter: https://x.com/cognibridgeai
+- Farcaster: nahtyra
+- Telegram/Discord: nah058130
+- GitHub: https://github.com/hidargmax27-cmyk
+- Wallet: 0x066889167Ba3629ef8bBc6069Ed705b9105b9d2C
+- KYC/W8/W9: available if required
+
+## Why Arbitrum
+
+Arbitrum is expanding across Arbitrum One, Orbit chains, Robinhood Chain, and application-specific ecosystems. As more chains and apps launch, early-stage teams need a simple way to prove delivery, and reviewers need a structured way to evaluate traction and operational risk.
+
+GrantOps Sentinel provides that operational visibility layer.
 
 ## Problem
 
-Grant applications often include claims about deployments, milestones, and usage, but the supporting evidence may be scattered across block explorers, repositories, social posts, and documents. This creates friction for both applicants and reviewers.
+New Arbitrum applications often submit grants, buildathon entries, and partnership requests with scattered evidence:
 
-For Arbitrum builders, this problem becomes more important as the ecosystem scales. A lightweight, open-source proof page can help teams document what they shipped and help reviewers compare evidence using a common structure.
+- contract addresses in one place
+- GitHub in another
+- social updates elsewhere
+- risk assumptions buried in code
+- milestone claims without structured chain evidence
+
+This slows down evaluation and weakens trust for users.
 
 ## Solution
 
-GrantOps Sentinel gives builders a public dashboard where they can register Arbitrum projects, attach contract addresses, link GitHub repositories, document milestones, mark source verification status, list privileged control keywords, and export structured evidence. The MVP includes chain filtering, search, risk-signal labels, project detail pages, explorer links, and JSON report export.
+The product creates public proof pages for Arbitrum projects:
 
-The current version is a static frontend application. This is deliberate: it allows fast review, easy deployment, and simple open-source contribution. Future versions can add automated Arbiscan ingestion, persistent project pages, and reviewer workflows.
+- deployed contract addresses and explorer links
+- source verification status
+- proxy/admin/upgrade/pause/mint risk signals
+- recent activity metrics
+- milestone evidence
+- project comparison dashboard for reviewers
 
-## Current MVP Scope
+## Buildathon Deliverables
 
-| Area | Current Status |
-|---|---|
-| Arbitrum One support | Included |
-| Arbitrum Sepolia support | Included |
-| Project registry | Included |
-| Explorer links | Included |
-| Source verification field | Included |
-| Proxy and privileged keyword signals | Included |
-| Milestone evidence | Included |
-| JSON report export | Included |
-| Automated Arbiscan ingestion | Planned |
-| Persistent hosted proof pages | Planned |
+### Week 1
 
-## Requested Support
+- Arbitrum project registration
+- public project proof page
+- basic contract metadata fields
+- 5 sample Arbitrum projects indexed manually
 
-We are seeking Arbitrum ecosystem support to develop GrantOps Sentinel into a practical public proof and reviewer workflow for Arbitrum builders. Funding would support automated explorer checks, persistent proof pages, stronger signal classification, and pilot testing with teams preparing grant applications.
+### Week 2
 
-## Milestones
+- automated risk signal parser
+- Arbitrum Sepolia and Arbitrum One support
+- recent transaction and active caller metrics
+- 15-20 sample projects indexed
 
-| Milestone | Description | Target Outcome |
-|---|---|---|
-| MVP public demo | Publish the static dashboard and documentation | Arbitrum reviewers can inspect the concept immediately |
-| Arbiscan integration | Add automated verification and activity checks | Less manual input from builders |
-| Shareable proof pages | Generate persistent public links | Applicants can attach one evidence URL |
-| Reviewer package export | Export Markdown and JSON evidence | Reviewers can archive the proof easily |
-| Builder pilot | Test with Arbitrum and Orbit teams | Validate workflow and collect feedback |
+### Week 3
 
-## Impact Metrics
+- demo-ready dashboard
+- exportable grant proof report
+- build log and user feedback
+- pitch deck and live demo
 
-The initial metrics will include the number of Arbitrum projects registered, generated proof pages, exported reports, linked contract addresses, and qualitative feedback from grant applicants or reviewers. As the product matures, additional metrics can include number of explorer checks performed, percentage of projects with verified source, and reviewer time saved.
+## Optional AI Agentic Feature
 
-## Team
+An agent takes a project page and produces a short reviewer memo:
 
-Applicant: Yutong Zhang. Brand / Team: Cognitive Bridge. Company entity: Shenzhen Witwith Technology Co., Ltd. Location: Hong Kong. Email: hidargmax27@gmail.com. X/Twitter: https://x.com/cognibridgeai. Farcaster: nahtyra. Telegram/Discord: nah058130. Wallet: 0x066889167Ba3629ef8bBc6069Ed705b9105b9d2C. GitHub: https://github.com/hidargmax27-cmyk.
+- what is live
+- what is verified
+- what is risky
+- what milestones are evidenced
+- what follow-up questions reviewers should ask
+
+This is positioned as decision support, not automated approval.
+
+## Prize/Grant Fit
+
+The project strengthens the operational services layer for early onchain businesses, especially teams preparing for grants, ecosystem launches, and institutional-facing deployments.
 
 ## Links
 
-GitHub: https://github.com/hidargmax27-cmyk/grantops-sentinel
-
-Demo: replace with deployed URL
+- Demo: replace with deployed URL
+- GitHub: https://github.com/hidargmax27-cmyk/grantops-sentinel
+- X/Twitter: https://x.com/cognibridgeai
+- Farcaster: nahtyra
 
 ## Disclaimer
 
 GrantOps Sentinel provides public risk signals and project evidence. It is not a smart contract audit, a security certification, financial advice, or an endorsement of any project.
+
