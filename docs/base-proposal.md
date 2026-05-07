@@ -6,7 +6,7 @@ GrantOps Sentinel by Cognitive Bridge
 
 ## Short Description
 
-GrantOps Sentinel is an open-source dashboard that helps Base builders prove shipped work, verified contracts, milestone delivery, and early ecosystem impact through public onchain evidence.
+GrantOps Sentinel is an open-source live privileged configuration scanner that helps Base builders prove shipped work while letting reviewers inspect what contracts currently authorize onchain.
 
 ## Applicant
 
@@ -24,9 +24,9 @@ GrantOps Sentinel is an open-source dashboard that helps Base builders prove shi
 
 ## Problem
 
-Base grants and retro funding reward shipped code and real ecosystem impact. However, early builders still struggle to present their work in a verifiable, standardized way. Reviewers and community members often need to manually check contracts, repositories, demos, social updates, transaction activity, and milestone claims.
+Base grants and retro funding reward shipped code and real ecosystem impact. However, early builders still struggle to present their work in a verifiable, standardized way. Reviewers and community members often need to manually check contracts, repositories, demos, social updates, transaction activity, milestone claims, and current privileged contract state.
 
-This creates friction for good builders and makes it harder for the ecosystem to distinguish active projects from low-signal submissions.
+This creates friction for good builders and makes it harder for the ecosystem to distinguish active projects from low-signal submissions. The hidden risk is privileged configuration: the owner, proxy admin, implementation, pause state, and multisig configuration can change after deployment.
 
 ## Solution
 
@@ -34,7 +34,9 @@ GrantOps Sentinel gives each project a public proof page that includes:
 
 - Base deployment addresses and explorer links
 - source verification status
-- basic contract risk signals such as proxy, admin, upgrade, pause, mint, blacklist, sweep, and withdraw controls
+- live privileged configuration scans for current owner, proxy admin, implementation, pause state, and EIP-1967 proxy slots
+- Safe threshold and owner reads when exposed
+- declared contract risk signals such as proxy, admin, upgrade, pause, mint, blacklist, sweep, and withdraw controls
 - milestone evidence and delivery links
 - early impact metrics such as recent transactions, active callers, and project updates
 
@@ -42,15 +44,16 @@ The first version supports Base mainnet and Base Sepolia, with Arbitrum support 
 
 ## Why Base
 
-Base emphasizes shipped projects, clear documentation, demos, and tracked impact in its funding guidance. GrantOps Sentinel directly strengthens those behaviors by giving builders a clean way to document and prove impact from day one.
+Base emphasizes shipped projects, clear documentation, demos, and tracked impact in its funding guidance. GrantOps Sentinel directly strengthens those behaviors by giving builders a clean way to document impact and by giving reviewers a current view of what contracts authorize at the latest block.
 
 The project also fits the public goods path because it is open-source, publicly accessible, and useful to many teams rather than a single commercial product.
 
 ## Current Status
 
-- Static MVP prepared.
+- Live privileged configuration MVP deployed.
 - GitHub repository prepared for open-source release.
 - Base and Arbitrum proof-page workflow implemented in the first demo.
+- Current owner/admin/proxy/implementation/pause-state scanner implemented through public RPC reads.
 - Applicant can commit 30-50 hours per week.
 
 ## Milestones
@@ -66,14 +69,17 @@ Deliverables:
 - public project proof page
 - open-source repository and setup docs
 
-### Milestone 2: Risk Signals
+### Milestone 2: Live Privileged Config
 
 Timeline: 2 weeks
 
 Deliverables:
 
 - source verification status
-- proxy/admin detection
+- current owner/admin detection
+- EIP-1967 implementation/admin/beacon slot detection
+- pause state detection
+- Safe threshold/owner probing where exposed
 - privileged function keyword detection
 - risk signal explanations
 
@@ -102,6 +108,8 @@ We will track:
 - number of public proof pages viewed/shared
 - number of contracts checked
 - number of builders using proof pages in grant applications
+- number of live privileged configurations scanned
+- number of owner/admin/proxy/implementation changes surfaced
 - number of issues or risk signals identified before broader user exposure
 
 ## Links

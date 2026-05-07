@@ -1,5 +1,5 @@
 <!doctype html>
-    <html lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,12 +13,12 @@
           <div class="brand-mark" aria-hidden="true">GS</div>
           <div>
             <h1>GrantOps Sentinel</h1>
-            <p>Public proof and risk signal pages for Base / Arbitrum builders</p>
+            <p>Live privileged config scanner for Base / Arbitrum builders</p>
           </div>
         </div>
         <div class="top-actions">
           <button class="icon-button" id="exportButton" title="Export report" aria-label="Export report">
-            <span aria-hidden="true">↓</span>
+            <span aria-hidden="true">&#8595;</span>
           </button>
           <button class="primary-button" id="focusFormButton">Add Project</button>
         </div>
@@ -34,16 +34,16 @@
 
             <label>
               Project Name
-              <input id="nameInput" name="name" required maxlength="48" placeholder="Example: Orbit Vault" />
+              <input id="nameInput" name="name" required maxlength="48" placeholder="Example: GrantOps Sentinel" />
             </label>
 
             <label>
               Chain
               <select id="chainInput" name="chain">
-                <option value="base">Base</option>
                 <option value="arbitrum">Arbitrum</option>
-                <option value="base-sepolia">Base Sepolia</option>
+                <option value="base">Base</option>
                 <option value="arbitrum-sepolia">Arbitrum Sepolia</option>
+                <option value="base-sepolia">Base Sepolia</option>
               </select>
             </label>
 
@@ -59,12 +59,12 @@
 
             <label>
               Milestone
-              <input id="milestoneInput" name="milestone" placeholder="Testnet deploy / Mainnet launch / Audit complete" />
+              <input id="milestoneInput" name="milestone" placeholder="Arbitrum Open House MVP" />
             </label>
 
             <label>
-              Privileged Function Keywords
-              <input id="functionInput" name="functions" placeholder="upgrade, pause, mint" />
+              Declared Privileges
+              <input id="functionInput" name="functions" placeholder="upgrade, pause, mint, withdraw" />
             </label>
 
             <div class="toggle-row">
@@ -89,16 +89,16 @@
               <strong id="totalProjects">0</strong>
             </div>
             <div class="metric-tile">
-              <span>Verified</span>
-              <strong id="verifiedProjects">0</strong>
+              <span>Live Scans</span>
+              <strong id="liveScans">0</strong>
             </div>
             <div class="metric-tile">
-              <span>High Risk</span>
-              <strong id="highRiskProjects">0</strong>
+              <span>Privilege Alerts</span>
+              <strong id="privilegeAlerts">0</strong>
             </div>
             <div class="metric-tile">
-              <span>Weekly Calls</span>
-              <strong id="weeklyCalls">0</strong>
+              <span>Latest Block</span>
+              <strong id="latestBlock">-</strong>
             </div>
           </div>
 
@@ -121,7 +121,7 @@
               <div class="empty-state">
                 <div class="empty-mark">GS</div>
                 <h2>Select a project</h2>
-                <p>The proof page shows deployment evidence, risk signals, milestones, and a grant-ready summary.</p>
+                <p>The proof page shows deployment evidence, live privileged config, and grant-ready status.</p>
               </div>
             </article>
           </section>

@@ -8,27 +8,27 @@ GrantOps Sentinel by Cognitive Bridge
 
 ## One-Liner
 
-Open-source public proof and risk signal pages for Base and Arbitrum builders.
+Open-source live privileged configuration scanner for Base and Arbitrum builders.
 
 ## Short Description
 
-GrantOps Sentinel helps early dApp teams prove shipped work, verified contracts, milestone evidence, and early onchain activity through a standardized public project page. It also shows preliminary contract risk signals such as source verification status, proxy usage, admin controls, upgradeability, pause, mint, blacklist, sweep, and withdraw permissions.
+GrantOps Sentinel helps early dApp teams prove shipped work while letting reviewers inspect what a contract currently authorizes onchain. It creates public project pages and scans live privileged configuration such as current owner, proxy admin, implementation address, pause status, EIP-1967 proxy slots, Safe threshold/owners, and declared privileged functions.
 
 ## Long Description
 
 Grant reviewers and ecosystem teams often need to manually verify whether a project has actually shipped. Builders also need a cleaner way to prove deployment, milestones, and impact without scattering evidence across explorers, GitHub, social posts, and private docs.
 
-GrantOps Sentinel creates public proof pages for Base and Arbitrum projects. Each page shows contract addresses, explorer links, source verification status, basic privileged-permission risk signals, milestone evidence, and early activity metrics.
+GrantOps Sentinel creates public proof pages for Base and Arbitrum projects. Each page shows contract addresses, explorer links, source verification status, milestone evidence, early activity metrics, and a live privileged configuration scan.
 
-The project is open-source and designed as public infrastructure for builders, reviewers, and users. It is not a smart contract audit or security certification; it is a public risk signal and evidence layer that helps people know what to inspect next.
+The key improvement is that the dashboard does not rely only on what deploy artifacts claimed yesterday. It reads current chain state at the latest block, so reviewers can see what the contract actually authorizes today. The project is not a smart contract audit or security certification; it is a public risk signal and evidence layer that helps people know what to inspect next.
 
 ## Problem
 
-Early projects have weak proof infrastructure. Grant reviewers must manually inspect explorers, GitHub repos, milestone claims, and social updates. This slows down good builders and makes it harder to identify low-signal or risky submissions.
+Early projects have weak proof infrastructure. Grant reviewers must manually inspect explorers, GitHub repos, milestone claims, social updates, and privileged contract state. The hidden risk is current privileged configuration: owner/admin roles, proxy upgrade authority, pause state, and multisig control are invisible until something breaks.
 
 ## Solution
 
-A public dashboard and project proof page that standardizes onchain evidence, milestone proof, and preliminary risk signals.
+A public dashboard and project proof page that standardizes onchain evidence, milestone proof, and live privileged configuration monitoring.
 
 ## Target Users
 
@@ -40,7 +40,7 @@ A public dashboard and project proof page that standardizes onchain evidence, mi
 
 ## Current Stage
 
-Static MVP deployed and publicly accessible at https://grantops-sentinel.vercel.app/.
+MVP deployed at https://grantops-sentinel.vercel.app/ with live RPC-based privileged configuration scanning for Base and Arbitrum contracts.
 
 ## Requested Support
 
@@ -48,6 +48,8 @@ Static MVP deployed and publicly accessible at https://grantops-sentinel.vercel.
 
 ## Use Of Funds
 
+- richer live owner/admin/proxy/implementation detection
+- AccessControl role probing and timelock detection
 - automated explorer API integration
 - risk signal parser improvements
 - public dashboard maintenance
@@ -66,4 +68,5 @@ Static MVP deployed and publicly accessible at https://grantops-sentinel.vercel.
 - Telegram/Discord: nah058130
 - GitHub: https://github.com/hidargmax27-cmyk
 - Demo: https://grantops-sentinel.vercel.app/
+- Arbitrum One contract: 0x6c8a8d204770d76078161bc391213524fdb6c4e7
 - Wallet: 0x066889167Ba3629ef8bBc6069Ed705b9105b9d2C

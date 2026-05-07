@@ -1,6 +1,6 @@
 # Roadmap
 
-## Phase 1: Static MVP
+## Phase 1: Live Config MVP
 
 Timeline: immediate
 
@@ -10,12 +10,26 @@ Timeline: immediate
 - explorer links
 - manual source verification status
 - proxy and privileged function risk signals
+- live RPC scan for current owner/admin/implementation state
+- EIP-1967 implementation/admin/beacon slot reads
+- pause status probing
+- Safe threshold and owner probing when exposed
 - public project proof page
 - JSON report export
 
-## Phase 2: Automated EVM Data
+## Phase 2: Deeper Privilege Detection
 
 Timeline: 2-3 weeks
+
+- AccessControl role probing
+- timelock delay detection
+- proxy family detection
+- multisig owner and threshold labeling
+- config drift history by block
+
+## Phase 3: Automated EVM Data
+
+Timeline: 3-5 weeks
 
 - BaseScan and Arbiscan API integration
 - contract source verification detection
@@ -24,7 +38,7 @@ Timeline: 2-3 weeks
 - recent unique caller count
 - simple project activity timeline
 
-## Phase 3: Reviewer Workflow
+## Phase 4: Reviewer Workflow
 
 Timeline: 4-6 weeks
 
@@ -34,7 +48,7 @@ Timeline: 4-6 weeks
 - public comments or reviewer notes
 - user feedback collection
 
-## Phase 4: Solana Support
+## Phase 5: Solana Support
 
 Timeline: after EVM MVP validation
 
@@ -44,7 +58,7 @@ Timeline: after EVM MVP validation
 - token account and mint authority signals
 - Solana project proof pages
 
-## Phase 5: AI Reviewer Memo
+## Phase 6: AI Reviewer Memo
 
 Timeline: after enough structured data exists
 
@@ -52,4 +66,3 @@ Timeline: after enough structured data exists
 - milestone evidence summary
 - missing information checklist
 - suggested follow-up questions for reviewers
-
