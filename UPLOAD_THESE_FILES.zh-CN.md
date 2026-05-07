@@ -1,4 +1,4 @@
-# 就上传这些文件
+﻿# 就上传这些文件
 
 你要上传的是整个 `grantops-sentinel` 文件夹里的内容。
 
@@ -25,8 +25,11 @@ grantops-sentinel/
 |- .nojekyll
 |- vercel.json
 |- netlify.toml
+|- assets/
+|  `- grantops-sentinel-logo.png
 |- contracts/
 |  `- GrantOpsProofRegistry.sol
+|  `- GrantOpsLiveConfigRegistryV2.sol
 `- docs/
    |- base-proposal.md
    |- arbitrum-proposal.md
@@ -34,6 +37,7 @@ grantops-sentinel/
    |- roadmap.md
    |- live-privileged-config-scanner.md
    |- form-answers.md
+   |- submission-copy-v2.md
    |- demo-video-script.md
    |- build-log-posts.md
    `- submission-checklist.md
@@ -50,13 +54,16 @@ grantops-sentinel/
 - `.nojekyll`：让 GitHub Pages 正常展示静态文件。
 - `vercel.json`：Vercel 部署配置。
 - `netlify.toml`：Netlify 部署配置。
+- `assets/grantops-sentinel-logo.png`：项目 logo。
 - `contracts/GrantOpsProofRegistry.sol`：Arbitrum proof registry 合约。
+- `contracts/GrantOpsLiveConfigRegistryV2.sol`：live privileged config scanner 的链上 V2 合约。
 - `docs/base-proposal.md`：Base 申请材料。
 - `docs/arbitrum-proposal.md`：Arbitrum 申请材料。
 - `docs/arbitrum-contract-deploy.md`：Arbitrum 合约部署记录。
 - `docs/roadmap.md`：开发路线图。
 - `docs/live-privileged-config-scanner.md`：实时特权配置扫描器的技术范围。
 - `docs/form-answers.md`：申请表常见字段答案。
+- `docs/submission-copy-v2.md`：升级后的最新复制粘贴字段。
 - `docs/demo-video-script.md`：录屏逐字稿。
 - `docs/build-log-posts.md`：X/Farcaster 可直接发的帖子。
 - `docs/submission-checklist.md`：提交前检查表。
@@ -67,7 +74,7 @@ grantops-sentinel/
 GitHub:   https://github.com/hidargmax27-cmyk/grantops-sentinel
 Demo:     https://grantops-sentinel.vercel.app/
 X:        https://x.com/cognibridgeai
-Contract: 0x6c8a8d204770d76078161bc391213524fdb6c4e7
+Contract: 0xb47349c83381f9C8EFeDB89354f89C2a699B9F05
 ```
 
 ## 这次升级重点
@@ -88,3 +95,4 @@ Contract: 0x6c8a8d204770d76078161bc391213524fdb6c4e7
 ```text
 GrantOps Sentinel reads what the contract actually authorizes today, not what the deploy artifact said yesterday.
 ```
+

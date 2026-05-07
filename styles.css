@@ -76,6 +76,7 @@ button {
   font-weight: 800;
   height: 44px;
   justify-content: center;
+  object-fit: cover;
   width: 44px;
 }
 

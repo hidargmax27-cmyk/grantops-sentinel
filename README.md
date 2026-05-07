@@ -1,4 +1,6 @@
-# GrantOps Sentinel
+﻿# GrantOps Sentinel
+
+![GrantOps Sentinel logo](./assets/grantops-sentinel-logo.png)
 
 GrantOps Sentinel is an open-source live privileged configuration scanner for Base and Arbitrum builders.
 
@@ -71,7 +73,7 @@ Or deploy the repository directly to Vercel, Netlify, Cloudflare Pages, or GitHu
 - Telegram/Discord: nah058130
 - Wallet: 0x066889167Ba3629ef8bBc6069Ed705b9105b9d2C
 - GitHub: https://github.com/hidargmax27-cmyk/grantops-sentinel
-- Arbitrum One contract: 0x6c8a8d204770d76078161bc391213524fdb6c4e7
+- Arbitrum One contract: 0xb47349c83381f9C8EFeDB89354f89C2a699B9F05
 
 ## Disclaimer
 
@@ -80,3 +82,4 @@ GrantOps Sentinel provides public risk signals, project evidence, and live autho
 ## License
 
 MIT
+

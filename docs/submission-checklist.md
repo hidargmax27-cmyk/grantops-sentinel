@@ -1,4 +1,4 @@
-# Submission Checklist
+﻿# Submission Checklist
 
 Do not submit grant applications until these are complete.
 
@@ -6,7 +6,7 @@ Do not submit grant applications until these are complete.
 
 - GitHub repository: https://github.com/hidargmax27-cmyk/grantops-sentinel
 - Demo URL: https://grantops-sentinel.vercel.app/
-- Arbitrum One contract: 0x6c8a8d204770d76078161bc391213524fdb6c4e7
+- Arbitrum One contract: 0xb47349c83381f9C8EFeDB89354f89C2a699B9F05
 - X/Twitter profile: https://x.com/cognibridgeai
 - Farcaster: nahtyra
 
@@ -49,3 +49,4 @@ Do not submit grant applications until these are complete.
 - Do not claim guaranteed grant approval.
 - Do not claim this detects every possible custom role or permission.
 - Do not claim historical config drift until block-by-block history is implemented.
+

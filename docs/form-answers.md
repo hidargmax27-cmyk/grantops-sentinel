@@ -1,4 +1,4 @@
-# Grant Form Answers
+﻿# Grant Form Answers
 
 Use these answers when filling Base, Arbitrum, hackathon, or public goods grant forms.
 
@@ -68,5 +68,6 @@ MVP deployed at https://grantops-sentinel.vercel.app/ with live RPC-based privil
 - Telegram/Discord: nah058130
 - GitHub: https://github.com/hidargmax27-cmyk
 - Demo: https://grantops-sentinel.vercel.app/
-- Arbitrum One contract: 0x6c8a8d204770d76078161bc391213524fdb6c4e7
+- Arbitrum One contract: 0xb47349c83381f9C8EFeDB89354f89C2a699B9F05
 - Wallet: 0x066889167Ba3629ef8bBc6069Ed705b9105b9d2C
+
